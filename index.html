@@ -1,851 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BMW </title>
-    <style>
-        body {
-
-            background-color: #ffffff;
-
-            margin: 0px;
-
-        }
-
-        #navbar {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: space-between;
-            height: 100px;
-            background-color: #f0f2f5;
-            padding-bottom: 10px;
-            padding-left: 30px;
-        }
-
-        #logo {
-
-            width: 200px;
-            height: 200px;
-
-        }
-
-
-
-        #navbarItems {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: space-around;
-            width: 400px;
-            font-size: larger;
-            font-weight: bold;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        a {
-            text-decoration: none;
-            color: #606060;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-
-
-
-        #bannerCar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 800px;
-            width: 100%;
-            background-image: url("BMWimage.jfif");
-            background-size: cover;
-            background-repeat: no-repeat;
-
-            backdrop-filter: blur(2px);
-        }
-
-
-
-        #imageContainer-text {
-            color: #f0f2f5;
-            border: 1px solid white;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding: 30px;
-            text-align: center;
-            width: 1000px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #Cars-title {
-
-            text-align: center;
-            color: #12436B;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-style: italic;
-
-            padding: 10px;
-        }
-
-
-        .MainContainer {
-            display: grid;
-
-            grid-template-columns: auto auto auto auto;
-            justify-content: space-evenly;
-
-
-        }
-
-        .item {
-            background-color: var(--softWhite);
-            cursor: pointer;
-            display: flex;
-            flex-flow: column nowrap;
-            width: 300px;
-            border: 1px dotted grey;
-            background-color: #FFFFFF;
-            box-shadow: 3px 3px 3px rgba(3, 26, 102, 0.4);
-            margin-block: 10px;
-            color: #272727;
-        }
-
-        .item:hover {
-            transform: scale3d(1.1, 1.1, 1.1);
-            transition: 0.7s;
-            box-shadow: 4px 4px 4px rgba(3, 26, 102, 0.6);
-            border: 1px solid black;
-        }
-
-        .bigImgDiv {
-            width: 100%;
-            height: 150px;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .bigContainer {
-            padding: 10px 10px 30px 10px;
-
-
-            flex: 1;
-        }
-
-        .bigContainer a:hover {
-
-            color: rgb(28, 3, 151);
-
-        }
-
-        #outerSignIn {
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f0f2f5;
-            margin: 20px 0px;
-            padding: 20px 0px;
-        }
-
-        #signIn {
-            font-family: cursive;
-
-            padding: 20px;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            justify-content: space-between;
-            font-weight: 700;
-            color: #272727;
-            background-color: #f0f2f5;
-
-
-
-        }
-
-        #signIn Div {
-
-            padding: 15px;
-
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: space-evenly;
-
-        }
-
-        #signIn>Div div {
-
-            padding: 5px;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: flex-start;
-            justify-content: space-between;
-        }
-
-        #submitDiv {
-
-            border: 3px solid #12436B;
-            border-radius: 20px;
-
-        }
-
-        #submitDiv input {
-            border: 0px;
-
-            margin: 3px;
-        }
-
-        #submitDiv:hover {
-            cursor: pointer;
-            background-color: #12436B;
-
-            transition: 0.5s;
-
-        }
-
-        #submitDiv:hover input {
-            cursor: pointer;
-            background-color: #12436B;
-            transition: 0.5s;
-            color: white;
-        }
-
-        #submitDiv:active {
-
-            transition: 0.1s;
-            transform: translate(2px, 2px);
-        }
-
-        #submitDiv>span {
-            display: inline-block;
-            margin: 5px 10px;
-        }
-
-        #footer {
-            color: #272727;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 40px 20px;
-            display: flex;
-            flex-flow: row nowrap;
-
-        }
-
-        #footer>div {
-
-            width: 50%;
-
-        }
-
-        #leftFooter {
-
-            display: flex;
-            flex-flow: column nowrap;
-            border-right: 1px dotted #272727;
-        }
-
-        #iconDiv {
-
-            display: flex;
-            flex-flow: row wrap;
-            align-items:center;
-            justify-content: space-evenly;
-            flex: 1;
-
-        }
-
-        #iconDiv a {
-
-            padding: 10px;
-            border-radius: 50%;
-            border: 2px dotted #706DFF;
-        }
-
-        .icon {
-            width: 50px;
-            height: 50px;
-
-
-        }
-
-        #iconDiv a:hover {
-
-            transform: scale3d(1.2, 1.2, 1.2);
-            border: 2px solid #706DFF;
-            transition: 0.7s;
-
-        }
-
-        #rightFooter {
-
-            width: 50%;
-
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: flex-start;
-            padding-left: 40px;
-
-        }
-
-        #signature {
-            background-color: #f0f2f5;
-            height: fit-content;
-        
-
-            color: #12436B;
-            font-weight: 700;
-            padding: 20px;
-
-        }
-
-        .Clickable:hover {
-
-            transform: scale3d(1.1, 1.1, 1);
-            transition: 0.4s;
-
-
-        }
-
-        .Clickable:hover>a {
-
-            color: #272727;
-
-
-        }
-
-
-        @media screen and (min-width: 2000px) {
-
-   
-.item {
-           
-           width: 400px;
-       
-          
-       }
-
-        }
-
-        @media screen and (min-width: 1500px) {
-*{
-
-    font-size: x-large;  
-}
-#navbarItems {
-
-width: 600px;
-padding-right: 20px;
-}
-
-            #bannerCar {
-
-                height: 1000px;
-
-            }
-
-            #imageContainer-text {
-
-                padding: 60px;
-             
-            }
-            #signature{
-                font-size: large;
-
-            }
-           
-        }
-
-       
-        @media screen and (max-width: 1300px) {
-
-
-
-            #bannerCar {
-
-                height: 600px;
-
-            }
-
-
-
-            #imageContainer-text {
-                font-size: larger;
-
-                padding: 30px;
-
-                width: 800px;
-            }
-
-
-
-
-
-
-            .MainContainer {
-                grid-template-columns: auto auto;
-            }
-
-            #navbarItems {
-                font-size: x-large;
-
-            }
-            #signature{
-                font-size: medium;
-               
-            }
-            #signature a{
-                font-size: medium;
-
-            }
-        }
-
-
-        @media screen and (max-width: 1000px) {
-
-          
-#imageContainer-text {
-
-
-padding: 20px;
-width: 600px;
-
-}
-
-
-#imageContainer-text {
-    font-size: large; 
-padding: 60px;
-
-}
-
-
-
-
-
-}
-
-        @media screen and (max-width: 700px) {
-
-            #navbarItems {
-                width: 300px;
-                font-size: large;
-            }
-
-            #logo {
-                width: 150px;
-                height: 150px;
-            }
-            #imageContainer-text {
-
-font-size: small;
-
-width: 400px;
-
-}
-
-            .MainContainer {
-
-                grid-template-columns: auto;
-
-            }
-
-            .item {
-           
-            width: 400px;
-        
-           
-        }
-        #signIn {
-
-padding: 0px;
-
-        }
-
-        #signIn Div {
-
-padding: 0px;
-flex-flow: column nowrap;
-
-        }
-
-
-
-
-
-        #iconDiv a {
-
-padding: 5px;
-
-}
-
-.icon {
-width: 30px;
-height: 30px;
-
-
-}
-
-
-
-
-
-
-        #signature{
-                font-size: small;
-
-            }
-            #signature a{
-                font-size: small;
-
-            }
-        }
-
-
-
-
-        @media screen and (max-width: 500px) {
-
-            #navbar {
-                height: 70px;
-            }
-
-            #logo {
-                width: 100px;
-                height: 100px;
-            }
-
-            #imageContainer-text {
-
-
-
-width: 300px;
-
-}
-
-.item {
-           
-           width: 300px;
-       
-          
-       }
-       #signIn {
-
-padding: 0px;
-
-        }
-
-        #signIn Div {
-
-padding: 0px;
-flex-flow: column nowrap;
-
-        }
-    }
-
-        @media screen and (max-width: 400px) {
-
-            #logo {
-
-                width: 80px;
-                height: 80px;
-
-            }
-
-            #navbarItems {
-                width: 300px;
-                font-size: medium;
-            }
-            #imageContainer-text {
-
-
-width: 200px;
-
-}
-        }
-    </style>
-
-</head>
-
-<body>
-
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
     <div id="navbar">
+      <div class="Clickable">
+        <a href="."><img src="BMWlogo.svg" id="logo" /> </a>
+      </div>
 
-        <div class="Clickable"> <a href="http://127.0.0.1:5500/CreoHub%20first%20project/index.html"><img
-                    src="BMWlogo.svg" id="logo"> </a></div>
-
-        <div id="navbarItems">
-
-            <div class="Clickable"> <a href="http://127.0.0.1:5500/CreoHub%20first%20project/index.html"> Home </a>
-            </div>
-            <div class="Clickable"> <a href="#signIn"> Sign in </a> </div>
-            <div class="Clickable"> <a href="#footer"> Contact us</a> </div>
-
-        </div>
-
+      <div id="navbarItems">
+        <div class="Clickable"><a href="."> Home </a></div>
+        <div class="Clickable"><a href="#signIn"> Sign in </a></div>
+        <div class="Clickable"><a href="#footer"> Contact us</a></div>
+      </div>
     </div>
-
-
 
     <div id="bannerCar">
-
-        <div id="imageContainer-text">
-
-            <div>
-                <h1>Welcome to our website </h1>
-            </div>
-
-
-            <div id="imageContainer">
-                <h2> Rely on us to choose for you the best car you can get! </h2>
-            </div>
-
+      <div id="imageContainer-text">
+        <div>
+          <h1>Welcome to our website</h1>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
+        <div id="imageContainer">
+          <h2>Rely on us to choose for you the best car you can get!</h2>
+        </div>
+      </div>
     </div>
-
-
 
     <div id="Cars">
+      <div id="Cars-title">
+        <h1>Check our new Collection!</h1>
+      </div>
 
-        <div id="Cars-title">
-            <h1> Check our new Collection! </h1>
+      <div class="MainContainer">
+        <div class="item">
+          <div class="bigImgDiv">
+            <img src="TheM4CSL.avif" />
+          </div>
+          <div class="bigContainer">
+            <div>
+              <h2>The M4 CSL</h2>
+            </div>
+            <div>
+              <a
+                href="https://www.bmw-lebanon.com/models/the-m4-csl/"
+                target="_blank"
+                >Discover now</a
+              >
+            </div>
+          </div>
         </div>
 
-
-
-
-        <div class="MainContainer">
-
-            <div class="item">
-
-                <div class="bigImgDiv">
-                    <img src="TheM4CSL.avif" />
-
-                </div>
-                <div class="bigContainer">
-
-                    <div>
-                        <h2>The M4 CSL </h2>
-                    </div>
-                    <div> <a href="https://www.bmw-lebanon.com/models/the-m4-csl/" target="_blank">Discover now</a>
-                    </div>
-                </div>
+        <div class="item">
+          <div class="bigImgDiv">
+            <img src="TheZ4.jpg" />
+          </div>
+          <div class="bigContainer">
+            <div>
+              <h2>The Z4</h2>
             </div>
-
-
-            <div class="item">
-
-                <div class="bigImgDiv">
-                    <img src="TheZ4.jpg" />
-
-                </div>
-                <div class="bigContainer">
-
-                    <div>
-                        <h2>The Z4 </h2>
-                    </div>
-                    <div> <a href="https://www.bmw-lebanon.com/models/thez4/" target="_blank">Discover now</a>
-                    </div>
-                </div>
+            <div>
+              <a
+                href="https://www.bmw-lebanon.com/models/thez4/"
+                target="_blank"
+                >Discover now</a
+              >
             </div>
-
-
-
-
-            <div class="item">
-
-                <div class="bigImgDiv">
-                    <img src="TheI7.jpg" />
-
-                </div>
-                <div class="bigContainer">
-
-                    <div>
-                        <h2>The i7 </h2>
-                    </div>
-                    <div> <a href="https://www.bmw-lebanon.com/the-i7/" target="_blank">Discover now</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="item">
-
-                <div class="bigImgDiv">
-                    <img src="THEGran2Coupe.jpg" />
-
-                </div>
-                <div class="bigContainer">
-
-                    <div>
-                        <h2>The 2 Gran Coupe</h2>
-                    </div>
-                    <div> <a href="https://www.bmw-lebanon.com/models/the2grancoupef-44/" target="_blank">Discover
-                            now</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
+          </div>
         </div>
 
+        <div class="item">
+          <div class="bigImgDiv">
+            <img src="TheI7.jpg" />
+          </div>
+          <div class="bigContainer">
+            <div>
+              <h2>The i7</h2>
+            </div>
+            <div>
+              <a href="https://www.bmw-lebanon.com/the-i7/" target="_blank"
+                >Discover now</a
+              >
+            </div>
+          </div>
+        </div>
 
+        <div class="item">
+          <div class="bigImgDiv">
+            <img src="THEGran2Coupe.jpg" />
+          </div>
+          <div class="bigContainer">
+            <div>
+              <h2>The 2 Gran Coupe</h2>
+            </div>
+            <div>
+              <a
+                href="https://www.bmw-lebanon.com/models/the2grancoupef-44/"
+                target="_blank"
+                >Discover now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <div id="outerSignIn">
-
-        <div id="signIn">
-            <div>
-                <h1> Sign in </h1>
-            </div>
-
-            <div>
-                <div>
-
-                    <div><span>First name</span></div>
-                    <div> <input type="text"></div>
-
-                </div>
-
-                <div>
-                    <div><span>Last name</span></div>
-                    <div> <input type="text"></div>
-                </div>
-            </div>
-
-            <div>
-
-                <div>
-
-                    <div><span>email address</span></div>
-                    <div> <input type="email"></div>
-                </div>
-
-                <div>
-                    <div><span>Password</span></div>
-                    <div> <input type="password"></div>
-                </div>
-            </div>
-
-
-            <div>
-
-                <div id="submitDiv"> <input type="submit" value="Sign In"> </div>
-            </div>
-
+      <div id="signIn">
+        <div>
+          <h1>Sign in</h1>
         </div>
 
+        <div>
+          <div>
+            <div><span>First name</span></div>
+            <div><input type="text" /></div>
+          </div>
+
+          <div>
+            <div><span>Last name</span></div>
+            <div><input type="text" /></div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div><span>email address</span></div>
+            <div><input type="email" /></div>
+          </div>
+
+          <div>
+            <div><span>Password</span></div>
+            <div><input type="password" /></div>
+          </div>
+        </div>
+
+        <div>
+          <div id="submitDiv"><input type="submit" value="Sign In" /></div>
+        </div>
+      </div>
     </div>
 
     <div id="footer">
+      <div id="leftFooter">
+        <div>
+          <h2>JOIN US ON SOCIAL MEDIA</h2>
 
-        <div id="leftFooter">
-
-            <div>
-                <h2>JOIN US ON SOCIAL MEDIA</h2>
-
-                <p>Immerse yourself even deeper. Visit and join our social channels today.</p>
-            </div>
-
-            <div id="iconDiv">
-                <a href="https://www.facebook.com/BMWLebanon" target="_blank"><img src="icons8-facebook.svg"
-                        class="icon"></a>
-                <a href="https://instagram.com/bmwlebanon" target="_blank"><img src="icons8-insta-64.png"
-                        class="icon"></a>
-                <a href="https://twitter.com/bmw_lebanon/?lang=en" target="_blank"><img src="icons8-x-50.png"
-                        class="icon"></a>
-                <a href="https://youtube.com/channel/UCTR2HnPGlj1B2LcfC0ck0RQ" target="_blank"><img
-                        src="icons8-youtube-32.png" class="icon"></a>
-
-            </div>
-
-
+          <p>
+            Immerse yourself even deeper. Visit and join our social channels
+            today.
+          </p>
         </div>
 
+        <div id="iconDiv">
+          <a href="https://www.facebook.com/BMWLebanon" target="_blank"
+            ><img src="icons8-facebook.svg" class="icon"
+          /></a>
+          <a href="https://instagram.com/bmwlebanon" target="_blank"
+            ><img src="icons8-insta-64.png" class="icon"
+          /></a>
+          <a href="https://twitter.com/bmw_lebanon/?lang=en" target="_blank"
+            ><img src="icons8-x-50.png" class="icon"
+          /></a>
+          <a
+            href="https://youtube.com/channel/UCTR2HnPGlj1B2LcfC0ck0RQ"
+            target="_blank"
+            ><img src="icons8-youtube-32.png" class="icon"
+          /></a>
+        </div>
+      </div>
 
-
-        <div id="rightFooter">
-
-            <div>
-                <h2>Explore BMW</h2>
-            </div>
-
-            <div>
-
-                <a href="https://www.bmw-lebanon.com/owners/" target="_blank">
-                    <p>Owners</p>
-                </a>
-                <a href="https://www.bmw-lebanon.com/corporate-sales/" target="_blank">
-                    <p>BMW Corporate Sales</p>
-                </a>
-                <a href="https://www.bmw-lebanon.com/news-events/" target="_blank">
-                    <p>News & Events</p>
-                </a>
-                <a href="https://www.bmw-lebanon.com/site/map/" target="_blank">
-                    <p>Site Map</p>
-                </a>
-
-            </div>
-
-
-
-
-
-
-
+      <div id="rightFooter">
+        <div>
+          <h2>Explore BMW</h2>
         </div>
 
-
-
+        <div>
+          <a href="https://www.bmw-lebanon.com/owners/" target="_blank">
+            <p>Owners</p>
+          </a>
+          <a
+            href="https://www.bmw-lebanon.com/corporate-sales/"
+            target="_blank"
+          >
+            <p>BMW Corporate Sales</p>
+          </a>
+          <a href="https://www.bmw-lebanon.com/news-events/" target="_blank">
+            <p>News & Events</p>
+          </a>
+          <a href="https://www.bmw-lebanon.com/site/map/" target="_blank">
+            <p>Site Map</p>
+          </a>
+        </div>
+      </div>
     </div>
-
 
     <div id="signature">
-
-        This page was powered by <a href="https://www.linkedin.com/in/jad-mcheik-870a9b292/" target="_blank">
-                Jad mcheik  </a>as an exemple about navbar , banner , grid cards, form and footer with
-        the assistnace of a CreaHub team member
+      This page was powered by
+      <a
+        href="https://www.linkedin.com/in/jad-mcheik-870a9b292/"
+        target="_blank"
+      >
+        Jad mcheik </a
+      >as an exemple about navbar , banner , grid cards, form and footer with
+      the assistnace of a CreaHub team member
     </div>
-
-
-</body>
-
+  </body>
 </html>
