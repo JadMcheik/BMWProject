@@ -515,8 +515,8 @@ display: block;
     height: 32px;
     position: absolute;
     top: -7px;
-    left: -5px;
-    
+    left: -9px;
+   
     cursor: pointer;
     
     opacity: 0; /* hide this */
@@ -592,9 +592,9 @@ display: block;
    */
   #menu
   {
-    display: block;
+   display: none;
     position: absolute;
-    width: 150px;
+    width: 130px;
     margin: -100px 0 0 450px;
     padding: 10px 10px;
     padding-top: 125px;
@@ -605,7 +605,7 @@ display: block;
     /* to stop flickering of text in safari */
     
     transform-origin: 0% 0%;
-    transform: translate(-150%, 0);
+    transform: translate(-250%, 0);
     
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
@@ -620,16 +620,13 @@ display: block;
    * And let's slide it in from the left
    */
 
-   #menuToggle input:checked ~ ul
-   {
-     transform: translate(-350%, 0);;
- 
-   }
 
+ 
   #menuToggle input:checked ~ ul
   {
-    transform: translate(-350%, 0);;
+    transform: translate(-415%, 0);;
     display: block;
+ 
   }
 
  
