@@ -13,10 +13,60 @@
       </div>
 
       <div id="navbarItems">
+
+
+
+
+
+
         <div class="Clickable"><a href="."> Home </a></div>
         <div class="Clickable"><a href="#signIn"> Sign in </a></div>
         <div class="Clickable"><a href="#footer"> Contact us</a></div>
       </div>
+
+
+
+
+
+
+      <nav role="navigation" id="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <a href="."><li>Home</li></a>
+            <a href="#signIn"><li>Sign in</li></a>
+            <a href="#footer"><li>Contact us</li></a>
+          
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
     </div>
 
     <div id="bannerCar">
@@ -75,7 +125,7 @@
 
         <div class="item">
           <div class="bigImgDiv">
-            <img src="TheI7.jpg" />
+            <img src="theI7.PNG" />
           </div>
           <div class="bigContainer">
             <div>
@@ -112,33 +162,33 @@
     <div id="outerSignIn">
       <div id="signIn">
         <div>
-          <h1>Sign in</h1>
+          <h1><span>SIGN IN</span></h1>
         </div>
-
-        <div>
+        <div id="formInfo">
           <div>
-            <div><span>First name</span></div>
-            <div><input type="text" /></div>
+            <div>
+              <div><span>First name</span></div>
+              <div><input type="text" /></div>
+            </div>
+
+            <div>
+              <div><span>Last name</span></div>
+              <div><input type="text" /></div>
+            </div>
           </div>
 
           <div>
-            <div><span>Last name</span></div>
-            <div><input type="text" /></div>
+            <div>
+              <div><span>email address</span></div>
+              <div><input type="email" /></div>
+            </div>
+
+            <div>
+              <div><span>Password</span></div>
+              <div><input type="password" /></div>
+            </div>
           </div>
         </div>
-
-        <div>
-          <div>
-            <div><span>email address</span></div>
-            <div><input type="email" /></div>
-          </div>
-
-          <div>
-            <div><span>Password</span></div>
-            <div><input type="password" /></div>
-          </div>
-        </div>
-
         <div>
           <div id="submitDiv"><input type="submit" value="Sign In" /></div>
         </div>
@@ -155,22 +205,31 @@
             today.
           </p>
         </div>
-
-        <div id="iconDiv">
-          <a href="https://www.facebook.com/BMWLebanon" target="_blank"
-            ><img src="icons8-facebook.svg" class="icon"
-          /></a>
-          <a href="https://instagram.com/bmwlebanon" target="_blank"
-            ><img src="icons8-insta-64.png" class="icon"
-          /></a>
-          <a href="https://twitter.com/bmw_lebanon/?lang=en" target="_blank"
-            ><img src="icons8-x-50.png" class="icon"
-          /></a>
-          <a
-            href="https://youtube.com/channel/UCTR2HnPGlj1B2LcfC0ck0RQ"
-            target="_blank"
-            ><img src="icons8-youtube-32.png" class="icon"
-          /></a>
+        <div id="outerIconDiv">
+          <div id="iconDiv">
+            <div>
+              <a href="https://www.facebook.com/BMWLebanon" target="_blank"
+                ><img src="icons8-facebook.svg" class="icon"
+              /></a>
+            </div>
+            <div>
+              <a href="https://instagram.com/bmwlebanon" target="_blank"
+                ><img src="icons8-insta-64.png" class="icon"
+              /></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/bmw_lebanon/?lang=en" target="_blank"
+                ><img src="icons8-x-50.png" class="icon"
+              /></a>
+            </div>
+            <div>
+              <a
+                href="https://youtube.com/channel/UCTR2HnPGlj1B2LcfC0ck0RQ"
+                target="_blank"
+                ><img src="icons8-youtube-32.png" class="icon"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
 
