@@ -74,12 +74,8 @@ display: flex;
 flex-flow: column nowrap;
 align-items: center;
 
-border: 1px solid red;
 }
-#Cars > div{
-border: 1px solid green;
 
-}
 #Cars-title {
   text-align: center;
   color: #12436b;
