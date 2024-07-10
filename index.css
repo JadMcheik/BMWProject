@@ -14,16 +14,15 @@ display: none;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+ 
   background-color: #f0f2f5;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+ padding: 30px;
+
 }
 
 #logo {
   width: 200px;
-  height: 200px;
+ height: fit-content;
 }
 
 #navbarItems {
@@ -53,7 +52,7 @@ a {
   justify-content: center;
   height: 600px;
   width: 100%;
-  background-image: url("BMWimage.jfif");
+  background-image: url("bmw-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -104,35 +103,46 @@ align-items: center;
   border: 1px dotted grey;
   background-color: #ffffff;
   box-shadow: 3px 3px 3px rgba(3, 26, 102, 0.4);
-  margin-block: 10px;
+  transition: 0.4s;
   color: #272727;
 }
 
 .item:hover {
-  transform: scale3d(1.1, 1.1, 1.1);
-  transition: 0.7s;
-  box-shadow: 4px 4px 4px rgba(3, 26, 102, 0.6);
   border: 1px solid black;
 }
 
 .bigImgDiv {
-  width: 100%;
+  width: 100;
   height: 200px;
+  transition: 0.7s;
 }
+.bigImgDiv:hover{
+  transform: scale3d(1.1, 1.1, 1.1);
+  box-shadow: 4px 4px 4px rgba(3, 26, 102, 0.6);
 
-img {
+}
+.bigImgDiv img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  
 }
 
 .bigContainer {
-  padding: 10px 0px 40px 10px;
-}
+  padding: 20px 10px 20px 10px;
 
-.bigContainer div{
-padding: 2px 0px;
 
 }
+
+
+
+.bigContainer div *{
+  
+  margin: 10px;
+
+  
+  }
+  
 .bigContainer a:hover {
   color: rgb(28, 3, 151);
 }
@@ -284,8 +294,8 @@ justify-items: center;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  border-radius: 50%;
-  border: 2px dotted #706dff;
+ 
+  border: 2px solid #706dff;
 }
 #iconDiv a {
   display: flex;
@@ -298,8 +308,8 @@ justify-items: center;
 }
 
 #iconDiv div:hover {
-  transform: scale3d(1.2, 1.2, 1.2);
-  border: 2px solid #706dff;
+  transform: scale3d(1.1, 1.1, 1.1);
+  border: 2px solid #2d2ae9;
   transition: 0.7s;
 }
 
@@ -320,10 +330,12 @@ justify-items: center;
   font-weight: 700;
   padding: 20px;
 }
-
+.Clickable{
+  transition: 0.4s;
+}
 .Clickable:hover {
   transform: scale3d(1.1, 1.1, 1);
-  transition: 0.4s;
+
 }
 
 .Clickable:hover > a {
@@ -373,7 +385,11 @@ font-size: 15px;
 
   }
   
-
+  #navbar {
+    
+  
+    padding: 20px;
+  }
 
   #bannerCar {
     height: 600px;
@@ -443,7 +459,7 @@ font-size: 15px;
 
   #logo {
     width: 150px;
-    height: 150px;
+   
   }
   #imageContainer-text {
     font-size: small;
@@ -688,9 +704,9 @@ display: block;
 
 
   #navbar {
-    border: 1px solid red;
-    height: 70px;
-    padding: 0px 30px;
+    
+  
+    padding: 15px 30px;
   }
 
   #navbarItems{
@@ -699,7 +715,7 @@ display: none;
   }
   #logo {
     width: 100px;
-    height: 100px;
+    
   }
 
   #imageContainer-text {
@@ -727,15 +743,27 @@ display: none;
 }
 
 @media screen and (max-width: 400px) {
-  #logo {
-    width: 80px;
-    height: 80px;
+ 
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: translate(-406%, 0);;
+    display: block;
+ 
   }
 
-  #navbarItems {
-    width: 300px;
-    font-size: medium;
+  #navbar {
+    
+  
+    padding: 10px 20px;
   }
+ 
+  #logo {
+    width: 80px;
+ 
+  }
+
+
   #imageContainer-text {
     padding: 7px;
     font-size: 10px;
