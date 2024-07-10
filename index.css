@@ -4,25 +4,21 @@ body {
   margin: 0px;
 }
 #navigation {
-
-display: none;
-
-
+  display: none;
 }
 #navbar {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
- 
-  background-color: #f0f2f5;
- padding: 30px;
 
+  background-color: #f0f2f5;
+  padding: 30px;
 }
 
 #logo {
   width: 200px;
- height: fit-content;
+  height: fit-content;
 }
 
 #navbarItems {
@@ -69,10 +65,9 @@ a {
 }
 #Cars {
   padding: 40px 0px;
-display: flex;
-flex-flow: column nowrap;
-align-items: center;
-
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 #Cars-title {
@@ -86,12 +81,9 @@ align-items: center;
 
 .MainContainer {
   display: grid;
- width: 100%;
+  width: 100%;
   grid-template-columns: auto auto auto auto;
   justify-content: space-evenly;
-
-
-
 }
 
 .item {
@@ -116,33 +108,24 @@ align-items: center;
   height: 200px;
   transition: 0.7s;
 }
-.bigImgDiv:hover{
+.bigImgDiv:hover {
   transform: scale3d(1.1, 1.1, 1.1);
   box-shadow: 4px 4px 4px rgba(3, 26, 102, 0.6);
-
 }
 .bigImgDiv img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
 .bigContainer {
   padding: 20px 10px 20px 10px;
-
-
 }
 
-
-
-.bigContainer div *{
-  
+.bigContainer div * {
   margin: 10px;
+}
 
-  
-  }
-  
 .bigContainer a:hover {
   color: rgb(28, 3, 151);
 }
@@ -157,9 +140,8 @@ align-items: center;
 }
 
 #signIn {
-
-font-family: Arial, Helvetica, sans-serif;
-width: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
 
   padding: 20px;
   display: flex;
@@ -173,21 +155,17 @@ width: 70%;
 
 #formInfo {
   width: 100%;
-
 }
 #formInfo div {
   width: 100%;
-  
 }
 #formInfo input {
   width: 100%;
   height: 40px;
 }
 
-#signIn >Div {
-
-
-width: 100%;
+#signIn > Div {
+  width: 100%;
   padding: 15px;
 
   display: flex;
@@ -196,9 +174,7 @@ width: 100%;
   justify-content: space-evenly;
 }
 
-#formInfo> Div div {
-
-
+#formInfo > Div div {
   padding: 5px;
   display: flex;
   flex-flow: column nowrap;
@@ -207,18 +183,15 @@ width: 100%;
 }
 
 #submitDiv {
-
-
-display: flex;
-align-items: center;
-justify-content: center;
-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
 
   border: 3px solid #12436b;
   border-radius: 20px;
   margin-top: 10px;
-width: 30%;
-  
+  width: 30%;
 }
 
 #submitDiv input {
@@ -271,21 +244,18 @@ width: 30%;
 }
 #outerIconDiv {
   display: flex;
-  
+
   justify-content: space-between;
 
   width: 100%;
 
-
-flex: 1;
-
+  flex: 1;
 }
 #iconDiv {
- 
   display: grid;
   grid-template-columns: auto auto auto auto;
-align-content: flex-start;
-justify-items: center;
+  align-content: flex-start;
+  justify-items: center;
   width: 60%;
 }
 
@@ -294,7 +264,7 @@ justify-items: center;
   align-items: center;
   justify-content: center;
   padding: 10px;
- 
+
   border: 2px solid #706dff;
 }
 #iconDiv a {
@@ -330,12 +300,11 @@ justify-items: center;
   font-weight: 700;
   padding: 20px;
 }
-.Clickable{
+.Clickable {
   transition: 0.4s;
 }
 .Clickable:hover {
   transform: scale3d(1.1, 1.1, 1);
-
 }
 
 .Clickable:hover > a {
@@ -343,8 +312,6 @@ justify-items: center;
 }
 
 @media screen and (min-width: 2000px) {
- 
- 
   .item {
     width: 400px;
   }
@@ -372,22 +339,16 @@ justify-items: center;
   }
 }
 @media screen and (max-width: 1500px) {
-
-  *{
+  * {
     font-size: 20px;
-    
-      }
-
+  }
 }
 @media screen and (max-width: 1300px) {
-  *{
-font-size: 15px;
-
+  * {
+    font-size: 15px;
   }
-  
+
   #navbar {
-    
-  
     padding: 20px;
   }
 
@@ -396,8 +357,6 @@ font-size: 15px;
   }
 
   #imageContainer-text {
-
-
     padding: 30px;
 
     width: 800px;
@@ -406,10 +365,8 @@ font-size: 15px;
   .MainContainer {
     grid-template-columns: auto auto;
   }
-  #formInfo>div>div {
-    
+  #formInfo > div > div {
     padding: 0px;
-    
   }
 
   #iconDiv > div {
@@ -420,7 +377,6 @@ font-size: 15px;
     width: 45px;
     height: 45px;
   }
-
 
   #signature {
     font-size: medium;
@@ -459,7 +415,6 @@ font-size: 15px;
 
   #logo {
     width: 150px;
-   
   }
   #imageContainer-text {
     font-size: small;
@@ -488,11 +443,9 @@ font-size: 15px;
 
   #formInfo {
     width: 100%;
-
   }
   #formInfo div {
     width: 100%;
-    
   }
   #formInfo input {
     width: 100%;
@@ -503,12 +456,10 @@ font-size: 15px;
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 10px;
-  align-content: center;
-  justify-items: center;
+    align-content: center;
+    justify-items: center;
     width: 70%;
   }
-  
-
 
   #iconDiv a {
     padding: 5px;
@@ -528,194 +479,147 @@ font-size: 15px;
 }
 
 @media screen and (max-width: 500px) {
+  #navigation {
+    display: block;
+  }
 
-
-
-
-
-#navigation{
-display: block;
-
-}
-
-  #menuToggle
-  {
+  #menuToggle {
     display: block;
     position: relative;
- 
-    
+
     z-index: 1;
-    
+
     -webkit-user-select: none;
     user-select: none;
   }
-  
-  #menuToggle a
-  {
+
+  #menuToggle a {
     text-decoration: none;
     color: #232323;
-    
+
     transition: color 0.3s ease;
   }
-  
-  #menuToggle a:hover
-  {
-    color:#12436b;
+
+  #menuToggle a:hover {
+    color: #12436b;
   }
-  
-  
-  #menuToggle input
-  {
+
+  #menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
     position: absolute;
     top: -7px;
     left: -9px;
-   
+
     cursor: pointer;
-    
+
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
-    
+
     -webkit-touch-callout: none;
   }
-  
+
   /*
    * Just a quick hamburger
    */
-  #menuToggle span
-  {
+  #menuToggle span {
     display: block;
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    
-    background:#12436b;
+
+    background: #12436b;
     border-radius: 3px;
-    
+
     z-index: 1;
-    
+
     transform-origin: 4px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
-  
-  #menuToggle span:first-child
-  {
+
+  #menuToggle span:first-child {
     transform-origin: 0% 0%;
   }
-  
-  #menuToggle span:nth-last-child(2)
-  {
+
+  #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
-  
+
   /* 
    * Transform all the slices of hamburger
    * into a crossmark.
    */
-  #menuToggle input:checked ~ span
-  {
+  #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
   }
-  
+
   /*
    * But let's hide the middle one.
    */
-  #menuToggle input:checked ~ span:nth-last-child(3)
-  {
+  #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
-  
+
   /*
    * Ohyeah and the last one should go the other direction
    */
-  #menuToggle input:checked ~ span:nth-last-child(2)
-  {
+  #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
-  
+
   /*
    * Make this absolute positioned
    * at the top left of the screen
    */
-  #menu
-  {
-   display: none;
+  #menu {
+    display: none;
     position: absolute;
     width: 130px;
     margin: -100px 0 0 450px;
     padding: 10px 10px;
     padding-top: 125px;
-    
+
     background: #f0f2f5;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
-    
+
     transform-origin: 0% 0%;
     transform: translate(-250%, 0);
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  
-  #menu li
-  {
+
+  #menu li {
     padding: 10px 0;
     font-size: 22px;
   }
-  
+
   /*
    * And let's slide it in from the left
    */
 
-
- 
-  #menuToggle input:checked ~ ul
-  {
-    transform: translate(-397%, 0);;
+  #menuToggle input:checked ~ ul {
+    transform: translate(-397%, 0);
     display: block;
- 
   }
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   #navbar {
-    
-  
     padding: 15px 30px;
   }
 
-  #navbarItems{
-display: none;
-
+  #navbarItems {
+    display: none;
   }
   #logo {
     width: 100px;
-    
   }
 
   #imageContainer-text {
@@ -743,26 +647,18 @@ display: none;
 }
 
 @media screen and (max-width: 400px) {
- 
-
-  #menuToggle input:checked ~ ul
-  {
-    transform: translate(-406%, 0);;
+  #menuToggle input:checked ~ ul {
+    transform: translate(-406%, 0);
     display: block;
- 
   }
 
   #navbar {
-    
-  
     padding: 10px 20px;
   }
- 
+
   #logo {
     width: 80px;
- 
   }
-
 
   #imageContainer-text {
     padding: 7px;
