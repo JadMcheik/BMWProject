@@ -18,7 +18,7 @@ body {
 
 #logo {
   width: 200px;
-  height: fit-content;
+object-fit: cover;
 }
 
 #navbarItems {
@@ -653,7 +653,7 @@ a {
   }
 
   #navbar {
-    padding: 5px 20px;
+    padding: 10px 20px;
   }
 
   #logo {
