@@ -192,6 +192,8 @@ a {
   border-radius: 20px;
   margin-top: 10px;
   width: 30%;
+
+  transition: 0.4s;
 }
 
 #submitDiv input {
@@ -199,24 +201,25 @@ a {
   background-color: #f0f2f5;
   margin: 3px 8px;
   color: black;
+  transition: 0.4s;
 }
 
 #submitDiv:hover {
   cursor: pointer;
   background-color: #12436b;
 
-  transition: 0.5s;
+
 }
 
 #submitDiv:hover input {
   cursor: pointer;
   background-color: #12436b;
-  transition: 0.5s;
+ 
   color: white;
 }
 
 #submitDiv:active {
-  transition: 0.1s;
+ 
   transform: translate(2px, 2px);
 }
 
