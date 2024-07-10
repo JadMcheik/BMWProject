@@ -69,7 +69,16 @@ a {
   width: 1000px;
 }
 #Cars {
-  padding: 20px 0px;
+  padding: 40px 0px;
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+
+border: 1px solid red;
+}
+#Cars > div{
+border: 1px solid green;
+
 }
 #Cars-title {
   text-align: center;
@@ -82,9 +91,12 @@ a {
 
 .MainContainer {
   display: grid;
-
+ width: 100%;
   grid-template-columns: auto auto auto auto;
   justify-content: space-evenly;
+
+
+
 }
 
 .item {
@@ -109,7 +121,7 @@ a {
 
 .bigImgDiv {
   width: 100%;
-  height: 150px;
+  height: 200px;
 }
 
 img {
@@ -118,12 +130,13 @@ img {
 }
 
 .bigContainer {
-  padding: 0px 0px 40px 10px;
-}
-.bigContainer div {
-  margin-top: 30px;
+  padding: 10px 0px 40px 10px;
 }
 
+.bigContainer div{
+padding: 2px 0px;
+
+}
 .bigContainer a:hover {
   color: rgb(28, 3, 151);
 }
@@ -138,7 +151,9 @@ img {
 }
 
 #signIn {
+
 font-family: Arial, Helvetica, sans-serif;
+width: 70%;
 
   padding: 20px;
   display: flex;
@@ -150,7 +165,23 @@ font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f2f5;
 }
 
-#signIn Div {
+#formInfo {
+  width: 100%;
+
+}
+#formInfo div {
+  width: 100%;
+  
+}
+#formInfo input {
+  width: 100%;
+  height: 40px;
+}
+
+#signIn >Div {
+
+
+width: 100%;
   padding: 15px;
 
   display: flex;
@@ -159,7 +190,9 @@ font-family: Arial, Helvetica, sans-serif;
   justify-content: space-evenly;
 }
 
-#signIn > Div div {
+#formInfo> Div div {
+
+
   padding: 5px;
   display: flex;
   flex-flow: column nowrap;
@@ -168,9 +201,18 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #submitDiv {
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50px;
+
   border: 3px solid #12436b;
   border-radius: 20px;
   margin-top: 10px;
+width: 30%;
+  
 }
 
 #submitDiv input {
@@ -223,19 +265,22 @@ font-family: Arial, Helvetica, sans-serif;
 }
 #outerIconDiv {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  
+  justify-content: space-between;
 
   width: 100%;
 
-  flex: 1;
+
+flex: 1;
+
 }
 #iconDiv {
+ 
   display: grid;
   grid-template-columns: auto auto auto auto;
-align-content: center;
+align-content: flex-start;
 justify-items: center;
-  width: 70%;
+  width: 60%;
 }
 
 #iconDiv > div {
@@ -410,7 +455,7 @@ font-size: 15px;
     width: 400px;
   }
   #Cars {
-    padding: 10px 0px;
+    padding: 20px 0px;
   }
   .MainContainer {
     grid-template-columns: auto;
@@ -485,8 +530,7 @@ display: block;
   {
     display: block;
     position: relative;
-    
-    right: -70%;
+ 
     
     z-index: 1;
     
@@ -624,7 +668,7 @@ display: block;
  
   #menuToggle input:checked ~ ul
   {
-    transform: translate(-415%, 0);;
+    transform: translate(-397%, 0);;
     display: block;
  
   }
@@ -648,7 +692,9 @@ display: block;
 
 
   #navbar {
+    border: 1px solid red;
     height: 70px;
+    padding: 0px 30px;
   }
 
   #navbarItems{
