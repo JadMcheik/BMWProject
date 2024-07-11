@@ -1,3 +1,12 @@
+
+
+@font-face {
+  font-family: 'banner-font'; 
+  src: url('PolandCanIntoBigWritingsOutline-B9RV.otf'); 
+}
+
+
+
 body {
   background-color: #ffffff;
 
@@ -62,6 +71,8 @@ a {
   padding: 30px;
   text-align: center;
   width: 1000px;
+font-family:'banner-font';
+
 }
 .cars {
   padding: 40px 0px;
@@ -423,8 +434,8 @@ a {
     width: 150px;
   }
   .image-container-text {
-    font-size: small;
-
+  font-size: 10px;
+padding: 15px;
     width: 400px;
   }
   .cars {
@@ -630,6 +641,10 @@ a {
 
   .image-container-text {
     width: 300px;
+      font-size: 7px;
+    
+      
+      
   }
 
   .item,
