@@ -282,8 +282,10 @@ font-family:'banner-font';
   justify-content: center;
   padding: 10px;
 
-  border: 2px solid #706dff;
+  border: 2px solid #ffffff;
+
 }
+
 .icon-div a {
   display: flex;
   align-items: center;
