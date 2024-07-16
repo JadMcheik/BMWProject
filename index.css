@@ -283,6 +283,7 @@ font-family:'banner-font';
   padding: 10px;
 
   border: 2px solid #ffffff;
+  transition: 0.7s;
 
 }
 
@@ -299,7 +300,7 @@ font-family:'banner-font';
 .icon-div div:hover {
   transform: scale3d(1.1, 1.1, 1.1);
   border: 2px solid #2d2ae9;
-  transition: 0.7s;
+ 
 }
 
 .right-footer {
